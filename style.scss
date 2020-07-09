@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500|Product+Sans:300,400,500|Material+Icons&display=swap");
+$roboto: "Roboto",
+Arial,
+Helvetica,
+sans-serif;
+$productsans: "Product Sans",
+$roboto;
+:root {
+    --mdc-theme-primary: #00bcd4;
+    --mdc-theme-on-primary: black;
+    --mdc-theme-secondary: #00bcd4;
+    --mdc-theme-on-secondary: black;
+}
+
+html {
+    height: 100%;
+    background: url("bg.png") center center/cover;
+}
+
+body {
+    font-family: $productsans;
+    margin: 0;
+}
+
+.messages {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding-bottom: 96px;
+    .message-cont {
+        padding: 20px;
+        margin: 20px;
+        .message {
+            font-size: 20px;
+        }
+        .user {
+            font-size: 12px;
+        }
+    }
+}
+
+.input-cont {
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: calc(100% - 40px);
+    background-color: white;
+}

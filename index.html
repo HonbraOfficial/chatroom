@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ChatRoom</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/material-components-web@6.0.0/dist/material-components-web.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/material-components-web@6.0.0/dist/material-components-web.min.css">
+
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="messages" id="messages"></div>
+    <form onsubmit="return sendFormMessage()" class="mdc-elevation--z10 input-cont">
+        <label class="mdc-text-field mdc-text-field--filled mdc-text-field--fullwidth" id="textfield">
+            <span class="mdc-text-field__ripple"></span>
+            <input class="mdc-text-field__input"
+                   type="text"
+                   placeholder="Message"
+                   aria-label="Message">
+            <span class="mdc-line-ripple"></span>
+          </label>
+    </form>
+</body>
+
+</html>
